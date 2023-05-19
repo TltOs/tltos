@@ -24,12 +24,12 @@ mkdir /var/tmp/iso-profiles
 fi
 #-->> Declare Variables
 workdir="/var/tmp/iso-profiles/${username}"
-cmpdir="/usr/share/lbf/components"
+cmpdir="/usr/share/liso/components"
 #-->> Copy First
 if [ -d "$workdir" ]; then
 rm -rf $workdir
 fi
-cp -rf /usr/share/lbf/iso-profiles/common $workdir
+cp -rf /usr/share/liso/iso-profiles/common $workdir
 #-->> Cinnamon
 if [[ $desktop == 1 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Cinnamon > $workdir/packages.x86_64
