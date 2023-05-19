@@ -29,17 +29,9 @@ do
 done
 
 # free = remove nvidia keep nouveau
-mv /etc/pacman.conf /etc/pacman.conf.bak
-mv /etc/pacman_lwd.conf /etc/pacman.conf
-pacman -Sy
 selection=$(get_driver)
-if [[ $selection == "oldnvidia" ]]; then
-	pacman -S nvidia-optimus-support nvidia-470xx-support --noconfirm
-    echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia-utils.conf
-    modprobe nvidia nvidia_modeset nvidia_uvm nvidia_drm
-fi
 #freenonouveau = Not nouveau
-if [[ $selection == "newnvidia" ]]; then
+if [[ $selection == "closednvidia" ]]; then
     echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia-utils.conf
 fi
 if [[ $selection == "free" ]]; then
@@ -52,8 +44,6 @@ if [[ $selection == "freenonouveau" ]]; then
     pacman -Rns nvidia-support nvidia-optimus-support
 fi
 # Fix pacman
-mv /etc/pacman.conf /etc/pacman_lwd.conf
-mv /etc/pacman.conf.bak /etc/pacman.conf
 #pacman-key --init
 #pacman-key --populate archlinux chaotic
 #until [[ $? -eq 0 ]]

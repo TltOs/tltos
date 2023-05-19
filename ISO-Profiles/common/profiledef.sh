@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="Liya"
-iso_label="Liya_2023"
+iso_label="NLIYA"
 iso_publisher="Liya <https://liyalinux.gitlab.io/>"
 iso_application="Liya Installer"
 iso_version="2023"

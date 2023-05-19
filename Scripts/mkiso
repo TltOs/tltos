@@ -148,11 +148,14 @@ echo "1: Yes"
 echo "2: No"
 read buildiso
 if [[ $buildiso == 1 ]]; then
-if [ -d "/work" ]; then
-echo "### Removing Work Directory ###"
-sudo rm -rf /work
+if [ ! -d "/liso" ]; then
+sudo mkdir /liso
 fi
-sudo mkarchiso -v -w /work -o /out $workdir
+if [ -d "/liso/work" ]; then
+echo "### Removing Work Directory ###"
+sudo rm -rf /liso/work
+fi
+sudo mkarchiso -v -w /liso/work -o /liso/out $workdir
 if [[ $? -eq 1 ]]
 then
 echo "### mkarchiso Returned With errors, rerunning mkarchiso ###"
