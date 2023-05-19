@@ -1,0 +1,13 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = linux-*
+Target = amd-ucode
+Target = intel-ucode
+
+[Action]
+Description = Update grub after installing or removing a kernel or ucode.
+When = PostTransaction
+Depends = grub
+Exec = /bin/sh -c "/usr/bin/update-grub"

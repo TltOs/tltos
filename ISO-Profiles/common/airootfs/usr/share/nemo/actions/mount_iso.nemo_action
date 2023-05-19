@@ -1,0 +1,7 @@
+[Nemo Action]
+Name=Mount Image File: %F
+Comment=Mount the ISO Image
+Exec=/usr/bin/nemo_action-mount_iso.sh %F
+Selection=s
+Extensions=iso;nrg;bin;img;mdf;
+Mimetypes=*/*

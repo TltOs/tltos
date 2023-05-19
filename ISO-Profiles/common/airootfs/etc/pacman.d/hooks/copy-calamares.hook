@@ -1,0 +1,11 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Type = Package
+Target = calamares
+
+[Action]
+Description = chmoding Calamares
+When = PostTransaction
+Depends = sh
+Exec = /bin/sh -c "chmod +x /etc/skel/Desktop/calamares.desktop"

@@ -1,0 +1,16 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Type = Package
+Target = irqbalance
+
+[Action]
+Description = Enabling Performance Tweaking Services
+When = PostTransaction
+Depends = sh
+Depends = ananicy-cpp
+Depends = preload
+Depends = irqbalance
+Depends = haveged
+Depends = ntp
+Exec = /bin/sh -c "systemctl enable irqbalance ananicy-cpp preload haveged ntpdate avahi-daemon"

@@ -1,0 +1,11 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Type = Package
+Target = calamares
+
+[Action]
+Description = Changing Branding
+When = PostTransaction
+Depends = sh
+Exec = /bin/sh -c "mv /etc/lsb-release2 /etc/lsb-release && mv /usr/lib/os-release_2 /usr/lib/os-release"

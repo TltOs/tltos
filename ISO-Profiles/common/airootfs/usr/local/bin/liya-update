@@ -1,0 +1,39 @@
+#!/bin/bash
+check_error() {
+if [[ $? -eq 1 ]]; then
+echo "[liya-update]: Info - Unable To Update, Check And Resolve The Errors, Contact System Admin (or) Liya Support"
+exit 1
+fi
+if [[ $? -eq 0 ]]; then
+echo "[liya-update]: Info - Sucessfully Completed.."
+fi
+}
+
+
+echo "[liya-update]: Info - Starting Liya Update"
+echo "[liya-update]: Question - Do You Want To Fully Update The System[y/n]"
+read fupd
+if [[ $fupd == y ]]; then
+echo "[liya-update]: Info - Updating Native Packages"
+sudo pacman -Syyu
+check_error
+echo "[liya-update]: Info - Updating AUR Packages"
+paru -Sua
+check_error
+echo "[liya-update]: Info - Updating Liya Versions And Addding New Features"
+wget -q --show-progress https://gitlab.com/liya5/releases/-/raw/main/release-main-info.txt
+wget -q --show-progress https://gitlab.com/liya5/releases/-/raw/main/release-main-install.sh
+mkdir -p /tmp/tmp_upd
+mv release-main-info.txt release-main-install.sh /tmp/tmp_upd
+chmod +x /tmp/tmp_upd/release-main-install.sh
+cat release-main-info.txt
+echo "[liya-update]: Info - Starting Core Updates..."
+sudo ./tmp/tmp_upd/release-main-install.sh
+check_error
+fi
+if [[ $fupd == n ]]; then
+echo "[liya-update]: Info - Exiting"
+exit
+fi
+
+

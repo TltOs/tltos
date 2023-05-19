@@ -1,0 +1,33 @@
+[Default Applications]
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+text/html=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+inode/directory=caja-folder-handler.desktop
+text/plain=pluma.desktop
+audio/flac=net.baseart.Glide.desktop
+audio/x-flac=net.baseart.Glide.desktop
+audio/mpeg=net.baseart.Glide.desktop
+audio/x-mpegurl=net.baseart.Glide.desktop
+audio/x-scpls=net.baseart.Glide.desktop
+audio/x-vorbis+ogg=net.baseart.Glide.desktop
+audio/x-wav=net.baseart.Glide.desktop
+video/mp4=net.baseart.Glide.desktop
+video/mpeg=net.baseart.Glide.desktop
+video/mp2t=net.baseart.Glide.desktop
+video/msvideo=net.baseart.Glide.desktop
+video/quicktime=net.baseart.Glide.desktop
+video/webm=net.baseart.Glide.desktop
+video/x-avi=net.baseart.Glide.desktop
+video/x-flv=net.baseart.Glide.desktop
+video/x-matroska=net.baseart.Glide.desktop
+video/x-mpeg=net.baseart.Glide.desktop
+video/x-ogm+ogg=net.baseart.Glide.desktop
+image/bmp=eom.desktop
+image/gif=eom.desktop
+image/jpeg=eom.desktop
+image/png=eom.desktop
+image/tiff=eom.desktop
+application/pdf=atril.desktop
+
+[Added Associations]

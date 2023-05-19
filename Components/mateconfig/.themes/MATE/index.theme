@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=MATE
+Type=X-GNOME-Metatheme
+Comment=A Neat And Clean Theme Based On Matcha
+
+[X-GNOME-Metatheme]
+GtkTheme=Matcha-dark-azul
+MetacityTheme=Matcha-dark-azul
+IconTheme=Papirus-Dark
+GtkColorScheme=menu_fg: #e3e4e7
+CursorTheme=Vanilla-DMZ
+CursorSize=24
+BackgroundImage=/usr/share/backgrounds/default.jpg

@@ -1,0 +1,11 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Type = Package
+Target = mkinitcpio-archiso
+
+[Action]
+Description = Disabling CopyToRam To Remove Any Issues
+When = PostTransaction
+Depends = sh
+Exec = /bin/sh -c "sed -i 's/copytoram="auto"/copytoram="n"/g' /usr/lib/initcpio/hooks/archiso"
