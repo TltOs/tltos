@@ -22,4 +22,5 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/liya-update"]="0:0:755"
   ["/usr/bin/nemo_action-mount_iso.sh"]="0:0:755"
+  ["/usr/local/bin/lwd-live"]="0:0:755"
 )
