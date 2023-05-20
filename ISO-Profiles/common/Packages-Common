@@ -30,6 +30,7 @@ galculator
 geoip-database-extra
 gestures
 ghostscript
+gnuuchess
 gnome-backgrounds
 gnome-chess-classic
 gparted
@@ -88,6 +89,8 @@ network-manager-applet
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+nvidia-support
+nvidia-optimus-support
 ntp
 numlockx
 open-vm-tools

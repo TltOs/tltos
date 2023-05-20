@@ -112,18 +112,6 @@ if [[ $blkarch_sup -eq 2 ]]; then
 echo "### Procceding ###"
 fi
 
-echo "### 470xx NVIDIA (1) (or) LATEST NVIDIA (2)"
-read nvidia_drm_support
-if [[ $nvidia_drm_support -eq 1 ]]; then
-echo "nvidia-470xx-support" >> $workdir/packages.x86_64
-echo "nvidia-optimus-support" >> $workdir/packages.x86_64
-sed -i 's/nvidia-support/nvidia-470xx-support/g' $workdir/airootfs/usr/local/bin/lwd-live
-fi
-if [[ $nvidia_drm_support -eq 2 ]]; then
-echo "nvidia-support" >> $workdir/packages.x86_64
-echo "nvidia-optimus-support" >> $workdir/packages.x86_64
-fi
-
 
 #-->> Add Packages
 nano $workdir/packages.x86_64
