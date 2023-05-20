@@ -33,15 +33,15 @@ selection=$(get_driver)
 #freenonouveau = Not nouveau
 if [[ $selection == "closednvidia" ]]; then
     echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia-utils.conf
+    echo "Leaving The Drivers Untouched ..."
 fi
 if [[ $selection == "free" ]]; then
-	echo "Nouveau Drivers are already installed, preparing to remove redundant packages related to NVIDIA"
-	pacman -Rns nvidia-support nvidia-optimus-support
+	echo "Nouveau Drivers are already installed, preparing to remove redundant packages related to NVIDIA ..."
+	pacman -Rns nvidia-support nvidia-optimus-support --noconfirm
 fi
 if [[ $selection == "freenonouveau" ]]; then
-	echo "INTEL/AMD Drivers are already installed, blacklisting nouveau and preparing to remove redundant packages related to NVIDIA"
-	echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia-utils.conf
-    pacman -Rns nvidia-support nvidia-optimus-support
+	echo "INTEL/AMD Drivers are already installed, and preparing to remove redundant packages related to NVIDIA ..."
+    pacman -Rns nvidia-support nvidia-optimus-support --noconfirm
 fi
 # Fix pacman
 #pacman-key --init

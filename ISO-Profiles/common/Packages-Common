@@ -31,7 +31,7 @@ geoip-database-extra
 gestures
 ghostscript
 gnome-backgrounds
-gnome-dictionary
+gnome-chess-classic
 gparted
 grub
 grub-btrfs
@@ -103,9 +103,10 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-playerctl
 plymouth
 preload
+protonvpn-gui
+protonvpn-cli
 python-pip
 samba
 starship
@@ -130,6 +131,7 @@ xbindkeys
 xcape
 xdg-user-dirs-gtk
 xdotool
+xfce4-dict
 xorg
 xorg-drivers
 zip
