@@ -8,6 +8,7 @@ autorandr
 base-devel
 bash-completion
 bat
+baobab-classic
 blueman
 bluez
 bluez-utils
@@ -30,10 +31,11 @@ galculator
 geoip-database-extra
 gestures
 ghostscript
-gnuuchess
+gnuchess
 gnome-backgrounds
 gnome-chess-classic
-gparted
+gnome-logs-classic
+gnome-disk-utility
 grub
 grub-btrfs
 gsmartcontrol
@@ -82,6 +84,7 @@ mhwd-arch
 mhwd-db-arch
 mlocate
 mpv
+msm-gui
 mypaint
 nano
 networkmanager
@@ -98,7 +101,7 @@ os-prober-btrfs
 p7zip
 pacman-contrib
 pacman-static
-pamac-aur
+pamac-nosnap
 papirus-icon-theme
 paru
 pfetch-git
