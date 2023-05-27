@@ -15,7 +15,7 @@ echo "[liya-update]: Question - Do You Want To Fully Update The System[y/n]"
 read fupd
 if [[ $fupd == y ]]; then
 echo "[liya-update]: Info - Updating Native Packages"
-sudo pacman -Syyu
+sudo pacman -Syu
 check_error
 echo "[liya-update]: Info - Updating AUR Packages"
 paru -Sua

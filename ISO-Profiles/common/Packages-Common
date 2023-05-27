@@ -34,8 +34,6 @@ ghostscript
 gnuchess
 gnome-backgrounds
 gnome-chess-classic
-gnome-logs-classic
-gnome-disk-utility
 grub
 grub-btrfs
 gsmartcontrol
@@ -92,8 +90,6 @@ network-manager-applet
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-nvidia-support
-nvidia-optimus-support
 ntp
 numlockx
 open-vm-tools
