@@ -48,7 +48,6 @@ cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=xfce/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
 
-
 #-->> XFCE
 if [[ $desktop == 3 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-MATE > $workdir/packages.x86_64
