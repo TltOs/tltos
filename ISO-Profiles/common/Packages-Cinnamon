@@ -2,11 +2,11 @@ beautyline
 cinnamon
 cinnamon-translations
 clipit
-file-roller
+file-roller-classic
 gnome-screenshot
 gnome-system-monitor
 gnome-logs-classic
-gnome-disk-utility
+gnome-disk-utility-classic
 kitty
 libtiff5
 mintlocale
@@ -18,3 +18,4 @@ sticky
 xcursor-vanilla-dmz
 xed
 xreader
+yelp-classic
