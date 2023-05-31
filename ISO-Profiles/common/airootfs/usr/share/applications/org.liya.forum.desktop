@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Liya GNU/Linux Forum
+Exec=brave "https://liyalinux.freeflarum.com"
+Comment=Launch The Liya Linux Forum For Help
+Terminal=false
+Icon=help-browser
+Type=Application
