@@ -1,11 +1,11 @@
-beautyline
 cinnamon
 cinnamon-translations
 clipit
 file-roller-classic
-gnome-screenshot
+gnome-screenshot-classic
 gnome-system-monitor-classic
 gnome-logs-classic
+gnome-calculator-classic
 gnome-disk-utility-classic
 gnome-dictionary
 kitty
@@ -15,8 +15,10 @@ nemo
 nemo-fileroller
 nemo-preview
 pix
+warpinator
 sticky
 xcursor-vanilla-dmz
 xed
 xreader
+xplayer
 yelp-classic
