@@ -5,10 +5,10 @@ anita-plymouth
 aptpac
 asp
 autorandr
+baobab-classic
 base-devel
 bash-completion
 bat
-baobab-classic
 blueman
 bluez
 bluez-utils
@@ -31,9 +31,9 @@ fzf
 geoip-database-extra
 gestures
 ghostscript
-gnuchess
 gnome-backgrounds
 gnome-chess-classic
+gnuchess
 grub
 grub-btrfs
 gsmartcontrol
@@ -111,8 +111,8 @@ python-pip
 samba
 starship
 strace
-system-config-printer
 stylish-grub-theme
+system-config-printer
 timeshift
 timeshift-autosnap
 tree

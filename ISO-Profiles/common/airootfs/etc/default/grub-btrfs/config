@@ -11,7 +11,7 @@ GRUB_BTRFS_SUBMENUNAME="System Snapshots"
 # Custom title.
 # Shows/Hides "date" "snapshot" "type" "description" in the Grub menu, custom order available.
 # Default: ("date" "snapshot" "type" "description")
-#GRUB_BTRFS_TITLE_FORMAT=("date" "snapshot" "type" "description")
+GRUB_BTRFS_TITLE_FORMAT=("date" "description")
 
 # Limit the number of snapshots populated in the GRUB menu.
 # Default: "50"
