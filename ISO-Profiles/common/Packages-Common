@@ -1,11 +1,9 @@
 aic94xx-firmware
-ananicy-cpp
-ananicy-rules-git
+ananicy
 anita-plymouth
 aptpac
 asp
 autorandr
-baobab-classic
 base-devel
 bash-completion
 bat
@@ -18,7 +16,6 @@ breeze
 calamares
 chaotic-keyring
 chaotic-mirrorlist
-chatgpt-desktop-bin
 cups
 dconf-editor
 dkms
@@ -96,7 +93,7 @@ os-prober-btrfs
 p7zip
 pacman-contrib
 pacman-static
-pamac-nosnap
+pamac-aur
 papirus-icon-theme
 paru
 pfetch-git
@@ -109,6 +106,7 @@ preload
 protonvpn-gui
 python-pip
 samba
+sample-files
 starship
 strace
 stylish-grub-theme

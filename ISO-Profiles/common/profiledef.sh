@@ -21,5 +21,4 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/liya-update"]="0:0:755"
-  ["/etc/skel/Templates/Shell\ Script.sh"]="0:0:755"
 )
