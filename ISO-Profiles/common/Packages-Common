@@ -30,6 +30,7 @@ gestures
 ghostscript
 gnome-backgrounds
 gnome-chess-classic
+gnome-robots
 gnuchess
 grub
 grub-btrfs
@@ -96,7 +97,6 @@ pacman-static
 pamac-aur
 papirus-icon-theme
 paru
-pfetch-git
 pipewire
 pipewire-alsa
 pipewire-jack

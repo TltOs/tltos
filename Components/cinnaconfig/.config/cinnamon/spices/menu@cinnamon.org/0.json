@@ -46,8 +46,6 @@
             "type": "section",
             "title": "Layout and content",
             "keys": [
-                "restrict-menu-height",
-                "menu-height",
                 "show-category-icons",
                 "category-icon-size",
                 "show-application-icons",
@@ -56,7 +54,8 @@
                 "fav-icon-size",
                 "show-places",
                 "show-recents",
-                "menu-editor-button"
+                "menu-editor-button",
+                "reset-menu-size-button"
             ]
         },
         "menu-behave": {
@@ -109,24 +108,6 @@
         "tooltip": "Enter custom text to show in the panel.",
         "dependency": "menu-custom",
         "value": ""
-    },
-    "restrict-menu-height": {
-        "type": "switch",
-        "default": false,
-        "description": "Use a fixed menu height",
-        "tooltip": "Keep the size of the menu the same no matter how many favorites or categories there are.",
-        "value": false
-    },
-    "menu-height": {
-        "type": "spinbutton",
-        "default": 550,
-        "min": 300,
-        "max": 2000,
-        "step": 10,
-        "units": "px",
-        "description": "Menu height",
-        "dependency": "restrict-menu-height",
-        "value": 550
     },
     "show-category-icons": {
         "type": "switch",
@@ -222,7 +203,7 @@
         "default": false,
         "description": "Enable filesystem path entry in search box",
         "tooltip": "Allows path entry in the menu search box.",
-        "value": true
+        "value": false
     },
     "force-show-panel": {
         "type": "switch",
@@ -263,5 +244,20 @@
         "callback": "_launch_editor",
         "tooltip": "Press this button to customize your menu entries."
     },
-    "__md5__": "38c9122e36f6267fae12706a694ac35f"
+    "popup-width": {
+        "type": "generic",
+        "default": 650,
+        "value": 564.98046875
+    },
+    "popup-height": {
+        "type": "generic",
+        "default": 650,
+        "value": 588.004150390625
+    },
+    "reset-menu-size-button": {
+        "type": "button",
+        "description": "Restore the menu to its original size",
+        "callback": "_reset_menu_size"
+    },
+    "__md5__": "c03fa0eb5ccfe67034b2f46c2c2398b0"
 }

@@ -8,4 +8,4 @@ Target = mkinitcpio-archiso
 Description = Disabling CopyToRam To Remove Any Issues
 When = PostTransaction
 Depends = sh
-Exec = /bin/sh -c "sed -i 's/copytoram="auto"/copytoram="n"/g' /usr/lib/initcpio/hooks/archiso"
+Exec = /bin/sh -c "sed -i 's/copytoram="auto"/copytoram="n"/g' /usr/lib/initcpio/hooks/archiso && rm -rf /etc/mkinitcpio.d/linux-xanmod.preset"

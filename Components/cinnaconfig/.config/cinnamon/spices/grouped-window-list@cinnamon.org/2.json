@@ -159,11 +159,11 @@
         "type": "generic",
         "default": [
             "nemo.desktop",
-            "brave-browser.desktop",
+            "firefox.desktop",
             "org.gnome.Terminal.desktop"
         ],
         "value": [
-            "kitty.desktop",
+            "org.gnome.Terminal.desktop",
             "nemo.desktop",
             "brave-browser.desktop"
         ]

@@ -220,6 +220,3 @@ export MCFLY_INTERFACE_VIEW=BOTTOM
 export MCFLY_RESULTS_SORT=LAST_RUN
 eval "$(mcfly init zsh)"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-## Run neofetch
-pfetch

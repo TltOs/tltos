@@ -34,10 +34,9 @@ cp -rf /usr/share/liso/iso-profiles/common $workdir
 if [[ $desktop == 1 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Cinnamon > $workdir/packages.x86_64
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/etc/skel
-cp -rf $cmpdir/cinnaconfig/.cinnamon $workdir/airootfs/etc/skel
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/root
-cp -rf $cmpdir/cinnaconfig/.cinnamon $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=cinnamon/g' $workdir/airootfs/etc/lightdm/lightdm.conf
+echo "    - xdg-desktop-portal-gnome" >> $workdir/airootfs/etc/calamares/modules/packages.conf
 fi
 
 #-->> XFCE
@@ -48,10 +47,10 @@ cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=xfce/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
 
-#-->> XFCE
+#-->> MATE
 if [[ $desktop == 3 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-MATE > $workdir/packages.x86_64
-cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/etc/skel
+cp -rf $cmpdir/mate/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
@@ -91,6 +90,10 @@ sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/syslinux/archiso_sys-li
 #-->> EFIBOOT
 sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/grub/grub.cfg
 sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/grub/grub.cfg
+
+#-->> Presets
+sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/airootfs/etc/mkinitcpio.d/live.preset
+sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/airootfs/etc/mkinitcpio.d/live.preset
 
 #-->> Blackarch
 echo "### Blackarch Support ###"

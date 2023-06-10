@@ -27,6 +27,17 @@
         },
         "value": "show_desklets"
     },
+    "scroll-behavior": {
+        "type": "combobox",
+        "default": "none",
+        "description": "Scroll wheel behavior",
+        "options": {
+            "Nothing": "nothing",
+            "Switch workspaces": "normal",
+            "Switch workspaces (reversed)": "reversed"
+        },
+        "value": "none"
+    },
     "peek-at-desktop": {
         "type": "switch",
         "default": false,
@@ -67,5 +78,5 @@
         "tooltip": "Change the opacity of windows when peeking at the desktop",
         "value": 5
     },
-    "__md5__": "c9d80feef5e24b1ccab9b6a03c1a5717"
+    "__md5__": "2a3b4c4bb5c6859baf3469c66fad8322"
 }
