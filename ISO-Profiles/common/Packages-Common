@@ -26,7 +26,6 @@ ffmpeg
 ffmpegthumbs
 fzf
 geoip-database-extra
-gestures
 ghostscript
 gnome-backgrounds
 gnome-chess-classic
@@ -53,7 +52,6 @@ htop
 imwheel
 inxi
 irqbalance
-kitty
 libgsf
 libopenraw
 librsvg
