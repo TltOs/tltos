@@ -1,15 +1,21 @@
-cinnamon
-baobab-classic
-cinnamon-translations
-clipit
-file-roller
+#-->> CLASSIC APPS
+gnome-logs-classic
 gnome-calculator-classic
+baobab-classic
+
+#-->> GNOME APPS
+file-roller
 gnome-disk-utility
 gnome-keyring
-gnome-logs-classic
 gnome-terminal
 gnome-screenshot
 gnome-system-monitor
+yelp
+
+#-->> CINNAMON AND XAPPS
+cinnamon
+cinnamon-translations
+clipit
 libtiff5
 mintlocale
 nemo
@@ -21,4 +27,3 @@ xcursor-vanilla-dmz
 xed
 xplayer
 xreader
-yelp

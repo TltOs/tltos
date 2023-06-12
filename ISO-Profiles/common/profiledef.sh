@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="Liya-$release_name-$iso_version"
-release_name="Ar"
-iso_label="OLIYA_$release_name"
+iso_name="Liya$iso_version"
+iso_label="OLIYA"
 iso_publisher="Liya <https://liyalinux.gitlab.io/>"
 iso_application="Liya GNU+Linux Live Environment"
 iso_version="v8.0"
