@@ -7,4 +7,4 @@ Target = cinnamon
 Description = Replacing Arch With Liya in CSM
 When = PostTransaction
 Depends = sh
-Exec = /bin/sh -c "sed -i 's/arch-release/liya-release/g' /usr/share/cinnamon/cinnamon-settings/modules/cs_info.py && sed -i 's/Arch Linux/Liya Linux/g' /usr/share/cinnamon/cinnamon-settings/modules/cs_info.py && chmod +x /etc/skel/Desktop/org.liya.forum.desktop"
+Exec = /bin/sh -c "sed -i 's/arch-release/liya-release/g' /usr/share/cinnamon/cinnamon-settings/modules/cs_info.py && sed -i 's/Arch Linux/Liya GNU+Linux/g' /usr/share/cinnamon/cinnamon-settings/modules/cs_info.py && chmod +x /etc/skel/Desktop/org.liya.forum.desktop"
