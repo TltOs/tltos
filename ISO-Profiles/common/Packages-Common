@@ -137,6 +137,7 @@ networkmanager
 network-manager-applet
 sample-files
 mkinitcpio-firmware
+postinstall
 
 #-->> ALL THE *X RELATED
 wmctrl
