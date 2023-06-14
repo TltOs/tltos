@@ -113,7 +113,7 @@ gufw
 htop
 msm-gui
 mypaint
-pamac-aur
+pamac-nosnap
 timeshift
 hardinfo
 brave-bin
@@ -135,6 +135,7 @@ geoip-database-extra
 networkmanager
 network-manager-applet
 sample-files
+mkinitcpio-firmware
 
 #-->> ALL THE *X RELATED
 wmctrl

@@ -13,4 +13,4 @@ Depends = preload
 Depends = irqbalance
 Depends = haveged
 Depends = uresourced
-Exec = /bin/sh -c "systemctl enable irqbalance ananicy preload haveged avahi-daemon uresourced ufw"
+Exec = /bin/sh -c "systemctl enable irqbalance ananicy preload haveged avahi-daemon uresourced ufw && flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
