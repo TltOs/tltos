@@ -8,4 +8,4 @@ Target = nano
 Description = Changing Visudo file
 When = PostTransaction
 Depends = sh
-Exec = echo "Defaults editor=/usr/bin/nano" >> /etc/sudoers
+Exec = sh -c "echo "Defaults editor=/usr/bin/nano" >> /etc/sudoers && rm -rf /boot/initramfs-linux-fallback.img"

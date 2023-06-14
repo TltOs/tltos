@@ -91,9 +91,10 @@ sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/syslinux/archiso_sys-li
 sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/grub/grub.cfg
 sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/grub/grub.cfg
 
-#-->> Presets
-sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/airootfs/etc/mkinitcpio.d/live.preset
-sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/airootfs/etc/mkinitcpio.d/live.preset
+#-->> Remove fallback
+sed -i "s/linux/$kernel_name/g" $workdir/airootfs/etc/pacman.d/hooks/set-sudoers.hook
+
+
 
 #-->> Blackarch
 echo "### Blackarch Support ###"
