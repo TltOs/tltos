@@ -78,6 +78,7 @@ matcha-gtk-theme
 stylish-grub-theme
 papirus-icon-theme
 gtk-backgrounds-anita
+ulauncher-meta
 
 #-->> PERFORMANCE
 haveged
@@ -116,6 +117,8 @@ pamac-aur
 timeshift
 hardinfo
 brave-bin
+systemd-manager
+deja-dup-classic
 
 #-->> BACKENDS
 timeshift-autosnap

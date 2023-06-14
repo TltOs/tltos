@@ -13,4 +13,4 @@ Depends = preload
 Depends = irqbalance
 Depends = haveged
 Depends = uresourced
-Exec = /bin/sh -c "systemctl enable irqbalance ananicy preload haveged avahi-daemon uresourced"
+Exec = /bin/sh -c "systemctl enable irqbalance ananicy preload haveged avahi-daemon uresourced ufw"
