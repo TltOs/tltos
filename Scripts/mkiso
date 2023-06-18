@@ -54,6 +54,13 @@ cp -rf $cmpdir/mate/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
+
+#-->> Version No.
+echo "### Version Number ###"
+read version_no
+sed -i "s/23/$version_no/g" $workdir/airootfs/etc/calamares/branding/default/branding.desc
+sed -i "s/23/$version_no/g" $workdir/profiledef.sh
+
 #-->> Kernel (Bootloader & Installer)
 echo "### Kernel ###"
 echo "==>> 1: Vanilla Linux"
