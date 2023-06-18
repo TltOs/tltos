@@ -26,6 +26,7 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
+
 #-->> PACKAGE MANAGEMENT & AUR
 asp
 bat

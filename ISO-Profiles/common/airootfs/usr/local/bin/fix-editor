@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Defaults editor=/usr/bin/nano" >> /etc/sudoers
