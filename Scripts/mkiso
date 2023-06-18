@@ -32,7 +32,7 @@ fi
 cp -rf /usr/share/liso/iso-profiles/common $workdir
 #-->> Cinnamon
 if [[ $desktop == 1 ]]; then
-cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Cinnamon > $workdir/packages.x86_64
+cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Cinnamon $workdir/Packages-User > $workdir/packages.x86_64
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=cinnamon/g' $workdir/airootfs/etc/lightdm/lightdm.conf
@@ -41,7 +41,7 @@ fi
 
 #-->> XFCE
 if [[ $desktop == 2 ]]; then
-cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-XFCE > $workdir/packages.x86_64
+cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-XFCE $workdir/Packages-User > $workdir/packages.x86_64
 cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=xfce/g' $workdir/airootfs/etc/lightdm/lightdm.conf
@@ -49,7 +49,7 @@ fi
 
 #-->> MATE
 if [[ $desktop == 3 ]]; then
-cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-MATE > $workdir/packages.x86_64
+cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-MATE $workdir/Packages-User > $workdir/packages.x86_64
 cp -rf $cmpdir/mate/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/lightdm/lightdm.conf
@@ -99,7 +99,7 @@ sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/grub/grub.cfg
 sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/grub/grub.cfg
 
 #-->> Remove fallback
-sed -i "s/linux/$kernel_name/g" $workdir/airootfs/etc/pacman.d/hooks/set-sudoers.hook
+sed -i "s/linux/$kernel_name/g" $workdir/airootfs/etc/pacman.d/hooks/remove-fallback.hook
 
 
 
@@ -122,10 +122,6 @@ if [[ $blkarch_sup -eq 2 ]]; then
 echo "### Procceding ###"
 fi
 
-
-#-->> Add Packages
-nano $workdir/packages.x86_64
-
 #-->> Sort Packages
 cd $workdir
 mv packages.x86_64 packages.x86_64.1
@@ -134,13 +130,8 @@ sed '/^#/d' packages.x86_642 > packages.x86_643
 awk '{if(NF>0) {print $0}}' packages.x86_643 > packages.x86_64
 rm -rf packages.x86_642 packages.x86_643 packages.x86_64.1
 
-
-#-->> Replace
-nano $workdir/profiledef.sh
-
-
-
 #-->> ISO Building
+# To do - generate a random string of numbers and letters and pass on to the work and out dirs
 echo "### Build The ISO? ###"
 echo "1: Yes"
 echo "2: No"
@@ -157,7 +148,7 @@ sudo mkarchiso -v -w /liso/work -o /liso/out $workdir
 if [[ $? -eq 1 ]]
 then
 echo "### mkarchiso Returned With errors, rerunning mkarchiso ###"
-sudo mkarchiso -v -w /work -o /out $workdir
+sudo mkarchiso -v -w /liso/work -o /liso/out $workdir
 fi
 fi
 if [[ $buildiso == 2 ]]; then
