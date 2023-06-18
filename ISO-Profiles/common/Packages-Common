@@ -80,8 +80,10 @@ papirus-icon-theme
 gtk-backgrounds-anita
 ulauncher-meta
 
+
 #-->> PERFORMANCE'
-minq-ananicy-git
+ananicy-cpp
+ananicy-rules-git
 haveged
 irqbalance
 uresourced
