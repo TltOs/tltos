@@ -2,6 +2,8 @@
 Operation = Install
 Type = Package
 Target = cinnamon
+Target = cinnamon-control-center
+
 
 [Action]
 Description = Replacing Arch With Liya in CSM

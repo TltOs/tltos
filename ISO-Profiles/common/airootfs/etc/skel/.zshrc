@@ -3,7 +3,7 @@
 if [ -d "$HOME/.local/bin" ]; then
     export PATH=$HOME/.local/bin:$PATH
 fi
-
+export EDITOR=nano
 eval "$(starship init zsh)"
 function set_win_title(){
     echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
@@ -179,8 +179,29 @@ if [[ -n "${key[Alt-Right]}" ]]; then
 	bindkey -M viins "${key[Alt-Right]}" forward-word
 	bindkey -M vicmd "${key[Alt-Right]}" forward-word
 fi
-
 ## Useful aliases
+alias pacinstall="sudo pacman -S"
+alias pacremove="sudo pacman -Rns"
+alias geninitramfs="sudo mkinitcpio -P"
+alias genmkinitcpio="sudo mkinitcpio -P"
+alias update="sudo pacman -Sy"
+alias upgrade="sudo pacman -Syu"
+alias npacman="sudo $EDITOR /etc/pacman.conf"
+alias ngrub="sudo $EDITOR /etc/default/grub"
+alias ngengrub="sudo $EDITOR /boot/grub/grub.cfg"
+alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
+alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
+alias nlightdm="sudo $EDITOR /etc/lightdm/lightdm.conf"
+alias ngtkgreeter="sudo $EDITOR /etc/lightdm/lightdm-gtk-greeter.conf"
+alias nslickgreeter="sudo $EDITOR /etc/lightdm/slick-greeter.conf"
+alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
+alias nconsolefont="sudo $EDITOR /etc/vconsole.conf"
+alias nz="$EDITOR ~/.zshrc"
+alias nhosts="sudo $EDITOR /etc/hosts"
+alias nhostname="sudo $EDITOR /etc/hostname"
+alias nresolv="sudo $EDITOR /etc/resolv.conf"
+alias probe="sudo -E hw-probe -all -upload"
+alias sysfailed="systemctl list-units --failed"
 alias grubup="sudo update-grub"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tarnow='tar -acf '

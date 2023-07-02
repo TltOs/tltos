@@ -165,6 +165,7 @@ noto-fonts-emoji
 ttf-fira-sans
 ttf-hack
 ttf-ms-fonts
+terminus-font
 
 #-->> BOOTLOADER
 grub
