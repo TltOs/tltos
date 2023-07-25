@@ -180,6 +180,7 @@ if [[ -n "${key[Alt-Right]}" ]]; then
 	bindkey -M vicmd "${key[Alt-Right]}" forward-word
 fi
 ## Useful aliases
+alias isoversion="cat /etc/liya-release"
 alias pacinstall="sudo pacman -S"
 alias pacremove="sudo pacman -Rns"
 alias geninitramfs="sudo mkinitcpio -P"
@@ -227,7 +228,7 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 
 # Help people new to Arch
 alias helpme='cht.sh --shell'
-alias pacdiff='sudo -H DIFFPROG=meld pacdiff'
+alias pacdiff='sudo -H DIFFPROG=$EDITOR pacdiff'
 alias please='sudo'
 alias tb='nc termbin.com 9999'
 

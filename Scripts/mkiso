@@ -1,6 +1,28 @@
-#!/bin/bash
-# ISO IMAGE CREATION SCRIPT
-# MADE BY SAYED
+#!/usr/bin/bash
+#
+#   liso - liya iso building script
+#
+#   Copyright (c) 2023 SAYED M. HISHAM <drhishamsayed128@protonmail.com>
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 2 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+#   liso uses quite a few external programs during its execution. You
+#   need to have at least the following installed for jasmitha to function:
+#   awk, bsdtar (libarchive), bzip2, coreutils, fakeroot, file, find (findutils),
+#   gettext, gpg, grep, gzip, sed, tput (ncurses), xz, archiso, squashfs-tools, erofs-tools.
+
 
 #-->> Clear The Screen
 clear
@@ -59,10 +81,17 @@ sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/ligh
 fi
 
 #-->> Version No.
+build_date=$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d)
 echo "### Version Number ###"
 read version_no
 sed -i "s/23/$version_no/g" $workdir/airootfs/etc/calamares/branding/default/branding.desc
 sed -i "s/23/$version_no/g" $workdir/profiledef.sh
+sed -i "s/iso_version_name/$version_no/g" $workdir/etc/liya-release
+sed -i "s/iso_date_modify/$build_date/g" $workdir/etc/liya-release
+echo "### CODENAME ###"
+read codename_liya
+sed -i "s/codename_new/$codename_liya/g" $workdir/etc/liya-release
+
 
 #-->> Kernel (Bootloader & Installer)
 echo "### Kernel ###"
@@ -70,6 +99,7 @@ echo "==>> 1: Vanilla Linux"
 echo "==>> 2: Linux-LTS"
 echo "==>> 3: Linux-Zen"
 echo "==>> 4: Linux-Xanmod"
+echo "==>> 5: Linux-Mainline"
 read kernel
 if [[ $kernel == 1 ]]; then
 kernel_name=linux
@@ -82,6 +112,10 @@ kernel_name=linux-zen
 fi
 if [[ $kernel == 4 ]]; then
 kernel_name=linux-xanmod
+fi
+
+if [[ $kernel == 5 ]]; then
+kernel_name=linux-mainline
 fi
 
 #-->> Copy Files

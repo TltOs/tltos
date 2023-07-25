@@ -30,12 +30,14 @@ lightdm-gtk-greeter-settings
 #-->> PACKAGE MANAGEMENT & AUR
 asp
 bat
+expac
 aptpac
 chaotic-keyring
 chaotic-mirrorlist
 pacman-contrib
 pacman-static
 paru
+pace
 
 #-->> SHELL
 bash-completion
@@ -83,12 +85,7 @@ ulauncher-meta
 
 
 #-->> PERFORMANCE'
-ananicy-cpp
-ananicy-rules-git
-haveged
-irqbalance
-uresourced
-preload
+performance-tweaks
 
 #-->> CODECS & ARCHIVAL FORMATS
 libgsf
@@ -117,6 +114,7 @@ gufw
 htop
 msm-gui
 mypaint
+mypaint-brushes
 pamac-aur
 timeshift
 hardinfo

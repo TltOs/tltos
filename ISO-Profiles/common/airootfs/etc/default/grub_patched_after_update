@@ -45,11 +45,11 @@ GRUB_GFXPAYLOAD_LINUX=keep
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 #GRUB_BACKGROUND="/path/to/wallpaper"
-GRUB_THEME=/usr/share/grub/themes/stylish/theme.txt
+#GRUB_THEME=/usr/share/grub/themes/stylish/theme.txt
 
 # Uncomment to get a beep at GRUB start
-GRUB_INIT_TUNE="480 440 1"
+#GRUB_INIT_TUNE="480 440 1"
 
 # Uncomment to make GRUB remember the last selection. This requires to
 # set 'GRUB_DEFAULT=saved' above.
-GRUB_SAVEDEFAULT="true"
+#GRUB_SAVEDEFAULT="true"
