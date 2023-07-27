@@ -86,11 +86,11 @@ echo "### Version Number ###"
 read version_no
 sed -i "s/23/$version_no/g" $workdir/airootfs/etc/calamares/branding/default/branding.desc
 sed -i "s/23/$version_no/g" $workdir/profiledef.sh
-sed -i "s/iso_version_name/$version_no/g" $workdir/etc/liya-release
-sed -i "s/iso_date_modify/$build_date/g" $workdir/etc/liya-release
+sed -i "s/iso_version_name/$version_no/g" $workdir/airootfs/etc/liya-release
+sed -i "s/iso_date_modify/$build_date/g" $workdir/airootfs/etc/liya-release
 echo "### CODENAME ###"
 read codename_liya
-sed -i "s/codename_new/$codename_liya/g" $workdir/etc/liya-release
+sed -i "s/codename_new/$codename_liya/g" $workdir/airootfs/etc/liya-release
 
 
 #-->> Kernel (Bootloader & Installer)
