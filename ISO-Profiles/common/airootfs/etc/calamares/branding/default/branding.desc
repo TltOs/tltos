@@ -12,7 +12,7 @@ componentName:  default
 # uses "Welcome to the Calamares installer for %1." This allows
 # to distinguish this installer from other installers for the
 # same distribution.
-welcomeStyleCalamares:   false
+welcomeStyleCalamares:   true
 
 # Should the welcome image (productWelcome, below) be scaled
 # up beyond its natural size? If false, the image does not grow
@@ -94,13 +94,13 @@ navigation: widget
 strings:
     productName:         Liya GNU+Linux
     shortProductName:    Liya
-    version:             23
-    shortVersion:        23
-    versionedName:       Liya GNU+Linux 23
-    shortVersionedName:  Liya 23
+    version:             v23
+    shortVersion:        v23
+    versionedName:       Liya GNU+Linux v23
+    shortVersionedName:  Liya v23
     bootloaderEntryName: Liya
     productUrl:          https://liyalinux.gitlab.io/
-    # supportUrl:        https://liya.freeflarum.com/
+    supportUrl:          https://liya.freeflarum.com/
     knownIssuesUrl:      https://gitlab.com/liya5/known-issues/
     releaseNotesUrl:     https://gitlab.com/liya5/changelog/
     donateUrl:           https://www.patreon.com/liyalinux

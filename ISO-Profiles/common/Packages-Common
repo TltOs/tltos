@@ -26,7 +26,6 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
-
 #-->> PACKAGE MANAGEMENT & AUR
 asp
 bat
@@ -71,6 +70,7 @@ bluez-utils
 #-->> MHWD
 mhwd-arch
 mhwd-db-arch
+mkinitcpio-openswap
 
 #-->> THEMING
 elementary-wallpapers

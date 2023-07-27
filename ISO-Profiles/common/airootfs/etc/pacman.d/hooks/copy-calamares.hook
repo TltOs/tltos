@@ -8,4 +8,4 @@ Target = calamares
 Description = chmoding Calamares
 When = PostTransaction
 Depends = sh
-Exec = /bin/sh -c "chmod +x /etc/skel/Desktop/calamares.desktop"
+Exec = /bin/sh -c "chmod +x /etc/skel/Desktop/*.desktop"

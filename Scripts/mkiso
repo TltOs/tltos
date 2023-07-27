@@ -59,9 +59,6 @@ cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=cinnamon/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 echo "    - xdg-desktop-portal-gnome" >> $workdir/airootfs/etc/calamares/modules/packages.conf
-sed -i 's/lightdm-gtk-greeter/lightdm-slick-greeter/g' $workdir/packages.x86_64
-sed -i 's/lightdm-gtk-greeter-settings/lightdm-settings/g' $workdir/packages.x86_64
-sed -i 's/lightdm-gtk-greeter/lightdm-slick-greeter/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
 
 #-->> XFCE
