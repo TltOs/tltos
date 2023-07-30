@@ -148,6 +148,7 @@ xcape
 xdotool
 xorg
 xorg-drivers
+numlockx
 
 #-->> CUPS & CONNECTIVITY
 ghostscript
