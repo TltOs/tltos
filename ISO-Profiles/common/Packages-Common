@@ -149,6 +149,7 @@ xdotool
 xorg
 xorg-drivers
 numlockx
+tpmmanager
 
 #-->> CUPS & CONNECTIVITY
 ghostscript

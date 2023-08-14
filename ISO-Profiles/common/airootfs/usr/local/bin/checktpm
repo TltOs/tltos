@@ -1,0 +1,9 @@
+#!/bin/bash
+dmesg | grep -i "1.2 TPM"
+if [[ $? -eq 1 ]]; then
+echo "[tpmcheck]: INFO - TPM 1.2 DOES NOT EXIST ON THIS PC."
+pacman -Rns tpmmanager
+fi
+if [[ $? -eq 0 ]]; then
+echo "[tpmcheck]: INFO - TPM 1.2 DOES EXIST ON THIS PC."
+fi

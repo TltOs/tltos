@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "About System"
+echo "OS - Liya 2023"
+echo "Linux Kernel - $(uname -a | awk '{ print $3 }')"
+echo "ISO Version - iso_version_name"
+echo "Codename - codename_new"
+echo "Build Date - iso_date_modify"
+echo "Installed Date - $(cat /etc/liya/installed.txt)"
+echo "Date Today - $(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d)"
