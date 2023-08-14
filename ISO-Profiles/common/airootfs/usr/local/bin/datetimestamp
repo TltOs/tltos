@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -r /etc/liya/installed.txt
+echo $(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d) >> /etc/liya/installed.txt

@@ -6,4 +6,5 @@ pacman -Rns tpmmanager
 fi
 if [[ $? -eq 0 ]]; then
 echo "[tpmcheck]: INFO - TPM 1.2 DOES EXIST ON THIS PC."
+systemctl enable tcsd
 fi

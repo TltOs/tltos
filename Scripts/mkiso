@@ -84,7 +84,9 @@ read version_no
 sed -i "s/23/$version_no/g" $workdir/airootfs/etc/calamares/branding/default/branding.desc
 sed -i "s/23/$version_no/g" $workdir/profiledef.sh
 sed -i "s/iso_version_name/$version_no/g" $workdir/airootfs/usr/local/bin/linver
+sed -i "s/iso_version_name/$version_no/g" $workdir/airootfs/etc/hostname
 sed -i "s/iso_date_modify/$build_date/g" $workdir/airootfs/usr/local/bin/linver
+sed -i "s/iso_date_modify/$build_date/g" $workdir/airootfs/etc/liya/installed.txt
 echo "### CODENAME ###"
 read codename_liya
 sed -i "s/codename_new/$codename_liya/g" $workdir/airootfs/usr/local/bin/linver
