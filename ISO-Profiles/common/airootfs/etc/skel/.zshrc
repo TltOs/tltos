@@ -232,9 +232,6 @@ alias pacdiff='sudo -H DIFFPROG=$EDITOR pacdiff'
 alias please='sudo'
 alias tb='nc termbin.com 9999'
 
-# Replace yay with paru if installed
-[ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
-
 # Load Mcfly
 export MCFLY_FUZZY=true
 export MCFLY_RESULTS=20
