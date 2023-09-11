@@ -38,6 +38,7 @@ echo "### Desktop Environment ###"
 echo "1: Cinnamon"
 echo "2: XFCE"
 echo "3: MATE"
+echo "4: Budgie"
 read desktop
 
 #-->> Make Directory
@@ -80,7 +81,9 @@ fi
 #-->> Bugdie
 if [[ $desktop == 4 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Budgie $workdir/Packages-User > $workdir/packages.x86_64
-sed -i 's/user-session=nosession/user-session=budgie/g' $workdir/airootfs/etc/lightdm/lightdm.conf
+cp -rf $cmpdir/budgieconfig/.config $workdir/airootfs/etc/skel
+cp -rf $cmpdir/budgieconfig/.config $workdir/airootfs/root
+sed -i 's/user-session=nosession/user-session=budgie-desktop/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
 
 #-->> Version No.
