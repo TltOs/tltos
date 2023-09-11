@@ -175,3 +175,12 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+
+#-->> WINE
+wine
+wine-gecko
+wine-mono
+winetricks
+
+#-->> NIX PACKAGES
+nix

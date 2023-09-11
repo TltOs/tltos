@@ -1,5 +1,10 @@
+#-->> Budgie
 budgie
+budgie-desktop-view
+budgie-backgrounds
+materia-gtk-theme
 budgie-extras
+
 #-->> CLASSIC APPS
 gnome-logs-classic
 gnome-calculator-classic
@@ -16,19 +21,4 @@ yelp
 seahorse
 
 #-->> CINNAMON AND XAPPS
-cinnamon
-cinnamon-translations
-clipit
-libtiff5
-mintlocale
-nemo
-nemo-fileroller
-nemo-preview
-pix
-sticky
-xcursor-vanilla-dmz
-xed
-mpv
-xreader
-touchegg
 pace
