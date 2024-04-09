@@ -2,6 +2,7 @@
 echo "About System"
 [ "$(findmnt / -no fstype)" == "overlay" ] && { echo "You're booted into live mode. Exiting.....'"; exit 1; }
 echo "OS - Liya 2023"
+echo "Liya Version - OLIYA"
 echo "Linux Kernel - $(uname -a | awk '{ print $3 }')"
 echo "ISO Version - iso_version_name"
 echo "Codename - vcodename_new"

@@ -35,10 +35,10 @@ read username
 
 #-->> Select The Desktop
 echo "### Desktop Environment ###"
-echo "1: Cinnamon"
-echo "2: XFCE"
-echo "3: MATE"
-echo "4: Budgie"
+echo "1: Cinnamon (E)"
+echo "2: XFCE (H)"
+echo "3: MATE (A)"
+echo "4: Budgie (R)"
 read desktop
 
 #-->> Make Directory
@@ -60,6 +60,8 @@ cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/cinnaconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=cinnamon/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 echo "    - xdg-desktop-portal-gnome" >> $workdir/airootfs/etc/calamares/modules/packages.conf
+sed -i 's/OLIYA/ELIYA/g' $workdir/profiledef.sh
+sed -i 's/OLIYA/Elijah/g' $workdir/airootfs/usr/local/bin/linver
 fi
 
 #-->> XFCE
@@ -68,6 +70,8 @@ cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common 
 cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/xfceconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=xfce/g' $workdir/airootfs/etc/lightdm/lightdm.conf
+sed -i 's/OLIYA/HLIYA/g' $workdir/profiledef.sh
+sed -i 's/OLIYA/Haya/g' $workdir/airootfs/usr/local/bin/linver
 fi
 
 #-->> MATE
@@ -76,6 +80,8 @@ cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common 
 cp -rf $cmpdir/mate/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/lightdm/lightdm.conf
+sed -i 's/OLIYA/ALIYA/g' $workdir/profiledef.sh
+sed -i 's/OLIYA/Amreen/g' $workdir/airootfs/usr/local/bin/linver
 fi
 
 #-->> Bugdie
@@ -83,6 +89,8 @@ if [[ $desktop == 4 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-Budgie $workdir/Packages-User > $workdir/packages.x86_64
 cp -rf $cmpdir/budgieconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/budgieconfig/.config $workdir/airootfs/root
+sed -i 's/OLIYA/RLIYA/g' $workdir/profiledef.sh
+sed -i 's/OLIYA/Rehana/g' $workdir/profiledef.sh
 sed -i 's/user-session=nosession/user-session=budgie-desktop/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 fi
 
