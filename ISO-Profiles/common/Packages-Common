@@ -119,7 +119,7 @@ timeshift
 hardinfo
 brave-bin
 systemd-manager
-deja-dup
+pika-backup
 
 #-->> BACKENDS
 timeshift-autosnap
