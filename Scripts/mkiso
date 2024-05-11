@@ -111,37 +111,22 @@ sed -i "s/codename_new/$codename_liya/g" $workdir/airootfs/usr/local/bin/linver
 
 #-->> Kernel (Bootloader & Installer)
 echo "### Kernel ###"
-echo "==>> 1: Vanilla Linux [binder]"
-echo "==>> 2. Vanilla Linux"
-echo "==>> 3: Linux-LTS"
-echo "==>> 4: Linux-Zen"
-echo "==>> 5: Linux-Xanmod"
-echo "==>> 6: Linux-Mainline"
-echo "==>> 7: Linux-Mainline [binder]"
+echo "==>> 1. Vanilla Linux"
+echo "==>> 2: Linux-LTS"
+echo "==>> 3: Linux-Zen"
+echo "==>> 4: Linux-Mainline"
 read kernel
 if [[ $kernel == 1 ]]; then
-kernel_name=linux-binder
-fi
-if [[ $kernel == 2 ]]; then
 kernel_name=linux
 fi
-if [[ $kernel == 3 ]]; then
+if [[ $kernel == 2 ]]; then
 kernel_name=linux-lts
 fi
-if [[ $kernel == 4 ]]; then
+if [[ $kernel == 3 ]]; then
 kernel_name=linux-zen
 fi
-
-if [[ $kernel == 5 ]]; then
-kernel_name=linux-xanmod
-fi
-
-if [[ $kernel == 6 ]]; then
+if [[ $kernel == 4 ]]; then
 kernel_name=linux-mainline
-fi
-
-if [[ $kernel == 7 ]]; then
-kernel_name=linux-mainline-binder
 fi
 
 #-->> Copy Files
@@ -218,4 +203,3 @@ fi
 if [[ $buildiso == 2 ]]; then
 exit
 fi
-
