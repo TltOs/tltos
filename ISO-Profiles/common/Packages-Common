@@ -66,10 +66,6 @@ boost-libs
 blueman
 bluez
 bluez-utils
-
-#-->> MHWD
-mhwd-arch
-mhwd-db-arch
 mkinitcpio-openswap
 
 #-->> THEMING
