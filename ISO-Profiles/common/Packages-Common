@@ -63,7 +63,8 @@ wget
 python-pip
 
 #-->> LIVENV
-calamares
+calamares-qt5
+yaml-cpp
 boost-libs
 blueman
 bluez

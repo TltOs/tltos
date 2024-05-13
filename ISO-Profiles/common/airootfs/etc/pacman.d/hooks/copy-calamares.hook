@@ -2,7 +2,7 @@
 [Trigger]
 Operation = Install
 Type = Package
-Target = calamares
+Target = calamares-qt5
 
 [Action]
 Description = chmoding Calamares
