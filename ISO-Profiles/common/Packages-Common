@@ -12,6 +12,8 @@ linux-firmware-qlogic
 linux-firmware-whence
 wd719x-firmware
 dkms
+intel-ucode
+amd-ucode
 mesa
 mesa-utils
 linux-atm
