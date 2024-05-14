@@ -2,6 +2,7 @@
 gnome-logs-classic
 baobab-classic
 
+
 #-->> GNOME APPS
 file-roller
 gnome-disk-utility
@@ -9,6 +10,7 @@ gnome-keyring
 gnome-terminal
 gnome-screenshot
 lxtask
+gnome-mplayer
 yelp
 seahorse
 
