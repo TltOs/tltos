@@ -63,8 +63,7 @@ wget
 python-pip
 
 #-->> LIVENV
-calamares
-calamares-debug
+calamares-qt5
 boost-libs
 blueman
 bluez
@@ -81,7 +80,7 @@ stylish-grub-theme
 papirus-icon-theme
 gtk-backgrounds-anita
 
-
+ulauncher-meta
 #-->> PERFORMANCE'
 performance-tweaks
 
