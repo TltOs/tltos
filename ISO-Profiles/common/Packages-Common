@@ -20,7 +20,7 @@ linux-atm
 open-vm-tools
 
 #-->> PLYMOUTH
-anita-plymouth
+colorful-plymouth
 plymouth
 
 #-->> LOGIN MANAGER
@@ -79,7 +79,6 @@ matcha-gtk-theme
 stylish-grub-theme
 papirus-icon-theme
 gtk-backgrounds-anita
-
 ulauncher-meta
 #-->> PERFORMANCE'
 performance-tweaks
