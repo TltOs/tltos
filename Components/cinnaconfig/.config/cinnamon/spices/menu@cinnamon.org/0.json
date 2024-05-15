@@ -88,7 +88,7 @@
         "tooltip": "Select an icon to show in the panel.",
         "default_icon": "cinnamon-symbolic",
         "dependency": "menu-custom",
-        "value": "/usr/share/pixmaps/liya.png"
+        "value": "/usr/share/pixmaps/apps.svg"
     },
     "menu-icon-size": {
         "type": "spinbutton",
@@ -203,7 +203,7 @@
         "default": false,
         "description": "Enable filesystem path entry in search box",
         "tooltip": "Allows path entry in the menu search box.",
-        "value": false
+        "value": true
     },
     "force-show-panel": {
         "type": "switch",
