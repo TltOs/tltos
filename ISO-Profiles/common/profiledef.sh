@@ -23,4 +23,5 @@ file_permissions=(
   ["/usr/local/bin/linver"]="0:0:755"
   ["/usr/local/bin/tpmcheck"]="0:0:755"
   ["/usr/local/bin/ufetch-liya"]="0:0:755"
+  ["/usr/local/bin/datetimestamp"]="0:0:755"
 )

@@ -23,7 +23,8 @@ alias jctl="journalctl -p 3 -xb"
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 PS1='[\u@\h \W]\$ '
-pfetch
+ufetch-liya
+motivate
 if  [ -x /usr/bin/starship ]; then
     __main() {
         local major="${BASH_VERSINFO[0]}"
