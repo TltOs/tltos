@@ -2,6 +2,7 @@
 gnome-logs-classic
 baobab-classic
 file-roller-classic
+celluloid-classic
 
 #-->> GNOME APPS
 gnome-disk-utility
@@ -27,7 +28,6 @@ pix
 sticky
 xcursor-vanilla-dmz
 xed
-mpv
 xreader
 touchegg
 pace
