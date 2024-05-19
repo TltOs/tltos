@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = mpv
+
+[Action]
+Description = Removing MPV Player From App Menu
+When = PostTransaction
+Depends = coreutils
+Exec = /bin/sh -c "/usr/bin/update-grub"
