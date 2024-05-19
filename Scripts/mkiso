@@ -115,7 +115,7 @@ echo "==>> 1. Vanilla Linux"
 echo "==>> 2: Linux-LTS"
 echo "==>> 3: Linux-Zen"
 echo "==>> 4: Linux-Mainline"
-echo "==>> 4: Linux-CachyOS"
+echo "==>> 5: Linux-CachyOS"
 read kernel
 if [[ $kernel == 1 ]]; then
 kernel_name=linux
@@ -130,7 +130,7 @@ if [[ $kernel == 4 ]]; then
 kernel_name=linux-mainline
 fi
 
-if [[ $kernel == 4 ]]; then
+if [[ $kernel == 5 ]]; then
 kernel_name=linux-cachyos
 fi
 
