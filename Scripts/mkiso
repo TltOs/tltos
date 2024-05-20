@@ -77,7 +77,7 @@ fi
 #-->> MATE
 if [[ $desktop == 3 ]]; then
 cat $workdir/Packages-Choice $workdir/Default-Packages $workdir/Packages-Common $workdir/Packages-MATE $workdir/Packages-User > $workdir/packages.x86_64
-cp -rf $cmpdir/mate/.config $workdir/airootfs/etc/skel
+cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/etc/skel
 cp -rf $cmpdir/mateconfig/.config $workdir/airootfs/root
 sed -i 's/user-session=nosession/user-session=mate/g' $workdir/airootfs/etc/lightdm/lightdm.conf
 sed -i 's/OLIYA/ALIYA/g' $workdir/profiledef.sh
