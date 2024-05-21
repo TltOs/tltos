@@ -8,4 +8,4 @@ Target = mpv
 Description = Removing MPV Player From App Menu
 When = PostTransaction
 Depends = coreutils
-Exec = /bin/sh -c "/usr/bin/update-grub"
+Exec = /bin/sh -c "rm -r /usr/share/applications/mpv.desktop"
