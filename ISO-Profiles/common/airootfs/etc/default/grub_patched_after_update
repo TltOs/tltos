@@ -2,6 +2,7 @@
 
 GRUB_DEFAULT=saved
 GRUB_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT=5
 GRUB_RECORDFAIL_TIMEOUT=$GRUB_HIDDEN_TIMEOUT
 GRUB_DISTRIBUTOR="Liya"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet vt.global_cursor_default=0 loglevel=3 vga=current rd.systemd.show_status=false rd.udev.log-priority=3"

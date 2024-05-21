@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Liya GNU/Linux Forum
-Exec=xdg-open "https://anitaos.freeflarum.com"
+Exec=xdg-open "https://liyalinux.freeflarum.com"
 Comment=Launch The Liya Linux Forum For Help
 Terminal=false
 Icon=help-browser
