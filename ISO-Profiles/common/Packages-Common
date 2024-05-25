@@ -117,6 +117,19 @@ hardinfo
 brave-bin
 systemd-manager
 pika-backup
+bleachbit
+cheese
+deluge-gtk
+exaile
+geary
+gnome-sound-recorder
+onlyoffice-bin
+python-pyxdg
+python-setuptools
+redshift
+scanner-support
+simple-scan
+uget
 
 #-->> BACKENDS
 timeshift-autosnap
