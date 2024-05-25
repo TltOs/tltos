@@ -116,6 +116,7 @@ echo "==>> 2: Linux-LTS"
 echo "==>> 3: Linux-Zen"
 echo "==>> 4: Linux-Mainline"
 echo "==>> 5: Linux-CachyOS"
+echo "==>> 6: Linux-Xanmod"
 read kernel
 if [[ $kernel == 1 ]]; then
 kernel_name=linux
@@ -132,6 +133,10 @@ fi
 
 if [[ $kernel == 5 ]]; then
 kernel_name=linux-cachyos
+fi
+
+if [[ $kernel == 6 ]]; then
+kernel_name=linux-xanmod
 fi
 
 #-->> Copy Files
