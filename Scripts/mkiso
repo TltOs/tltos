@@ -138,6 +138,10 @@ fi
 if [[ $kernel == 6 ]]; then
 kernel_name=linux-xanmod
 fi
+#-->> Specific To CachyOS
+if [[ $kernel == 6 ]]; then
+sed -i "s/performance-tweaks/performance-tweaks-cachy/g" $workdir/packages.x86_64
+fi
 
 #-->> Copy Files
 headers_name=$kernel_name-headers
@@ -155,11 +159,8 @@ sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/syslinux/archiso_sys-li
 #-->> EFIBOOT
 sed -i "s/vmlinuz-linux/$boot_kernel/g" $workdir/grub/grub.cfg
 sed -i "s/initramfs-linux.img/$initcpio_name/g" $workdir/grub/grub.cfg
-
 #-->> Remove fallback
 sed -i "s/linux/$kernel_name/g" $workdir/airootfs/etc/pacman.d/hooks/remove-fallback.hook
-
-
 
 #-->> Blackarch
 echo "### Blackarch Support ###"
