@@ -138,14 +138,10 @@ fi
 
 if [[ $kernel == 6 ]]; then
 kernel_name=linux-xanmod
+sed -i 's/performance-tweaks/performance-tweaks-xanmod/g' $workdir/packages.x86_64
 fi
 if [[ $kernel == 7 ]]; then
 kernel_name=linux-lqx
-fi
-
-#-->> Specific To CachyOS
-if [[ $kernel == 6 ]]; then
-sed -i "s/performance-tweaks-cachy/performance-tweaks/g" $workdir/packages.x86_64
 fi
 
 #-->> Copy Files
