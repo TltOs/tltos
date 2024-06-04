@@ -117,6 +117,7 @@ echo "==>> 3: Linux-Zen"
 echo "==>> 4: Linux-Mainline"
 echo "==>> 5: Linux-CachyOS"
 echo "==>> 6: Linux-Xanmod"
+echo "==>> 7: Liquorix"
 read kernel
 if [[ $kernel == 1 ]]; then
 kernel_name=linux
@@ -138,9 +139,13 @@ fi
 if [[ $kernel == 6 ]]; then
 kernel_name=linux-xanmod
 fi
+if [[ $kernel == 7 ]]; then
+kernel_name=linux-lqx
+fi
+
 #-->> Specific To CachyOS
 if [[ $kernel == 6 ]]; then
-sed -i "s/performance-tweaks/performance-tweaks-cachy/g" $workdir/packages.x86_64
+sed -i "s/performance-tweaks-cachy/performance-tweaks/g" $workdir/packages.x86_64
 fi
 
 #-->> Copy Files
