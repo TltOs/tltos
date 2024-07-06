@@ -25,4 +25,5 @@ file_permissions=(
   ["/usr/local/bin/kernel-support"]="0:0:755"
   ["/usr/local/bin/ufetch-liya"]="0:0:755"
   ["/usr/local/bin/datetimestamp"]="0:0:755"
+  ["/usr/local/bin/fixpacrepo"]="0:0:755"
 )

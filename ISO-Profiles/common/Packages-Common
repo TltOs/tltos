@@ -20,7 +20,7 @@ linux-atm
 open-vm-tools
 
 #-->> PLYMOUTH
-colorful-plymouth
+anita-plymouth
 plymouth
 
 #-->> LOGIN MANAGER

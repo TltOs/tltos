@@ -7,7 +7,7 @@ budgie-extras
 
 #-->> CLASSIC APPS
 gnome-logs-classic
-gnome-calculator-classic
+galculator
 baobab-classic
 celluloid-classic
 pix
@@ -28,5 +28,5 @@ gnome-system-monitor
 yelp
 seahorse
 
-#-->> CINNAMON AND XAPPS
+#-->> Budgie AND XAPPS
 pace

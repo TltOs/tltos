@@ -180,6 +180,7 @@ if [[ -n "${key[Alt-Right]}" ]]; then
 	bindkey -M vicmd "${key[Alt-Right]}" forward-word
 fi
 ## Useful aliases
+alias gc="git clone"
 alias isoversion="cat /etc/liya-release"
 alias pacinstall="sudo pacman -S"
 alias pacremove="sudo pacman -Rns"
