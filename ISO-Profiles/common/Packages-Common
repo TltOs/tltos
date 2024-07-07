@@ -33,6 +33,8 @@ asp
 bat
 expac
 aptpac
+gnome-keyring
+seahorse
 chaotic-keyring
 chaotic-mirrorlist
 pacman-contrib
