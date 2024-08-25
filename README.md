@@ -1,7 +1,6 @@
 # Liya Build Framework
 
 ### DEBRAND ###
-
 1. Change the logo in /usr/share/pixmaps
 <br>
 2. Change GRUB And SYSLINUX Themes
@@ -15,5 +14,3 @@
 6. Change name in motd file (/etc/motd)
 <br>
 7. Change liya-update to your own (/usr/local/bin/liya-update)
-<br>
-8. Change Cinnamon menu button (Components/cinnaconfig/.cinnamon/configs/menu@cinnamon.org/0.json)
