@@ -38,7 +38,6 @@ seahorse
 chaotic-keyring
 chaotic-mirrorlist
 pacman-contrib
-pacman-static
 ame
 pace
 
@@ -117,7 +116,6 @@ pamac-flatpak
 timeshift
 hardinfo
 brave-bin
-systemd-manager
 pika-backup
 bleachbit
 cheese
