@@ -15,7 +15,7 @@ yelp
 #-->> CINNAMON AND XAPPS
 cinnamon
 cinnamon-translations
-qlipper
+xfce4-clipman-plugin
 libtiff5
 mintlocale
 galculator
