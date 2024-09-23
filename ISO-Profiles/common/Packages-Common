@@ -64,7 +64,7 @@ wget
 python-pip
 
 #-->> LIVENV
-calamares-qt5
+calamares-meta
 boost-libs
 blueman
 bluez
@@ -106,7 +106,6 @@ dconf-editor
 gsmartcontrol
 gnome-chess-classic
 gnome-robots
-proton-vpn-gtk-app
 gnuchess
 gufw
 htop
