@@ -73,7 +73,6 @@ mkinitcpio-openswap
 
 #-->> THEMING
 elementary-wallpapers
-breeze5
 gnome-backgrounds
 gtk-backgrounds-default
 matcha-gtk-theme
