@@ -98,6 +98,7 @@ p7zip
 lrzip
 lzop
 gnome-encfs-manager-bzr
+
 #-->> APPS
 emote
 motivate
@@ -120,7 +121,6 @@ cheese
 deluge-gtk
 exaile
 geary
-gnome-sound-recorder
 onlyoffice-bin
 python-pyxdg
 python-setuptools
@@ -182,6 +182,3 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-
-#-->> NIX PACKAGES
-nix
