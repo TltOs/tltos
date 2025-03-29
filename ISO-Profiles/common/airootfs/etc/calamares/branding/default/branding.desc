@@ -92,18 +92,18 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         Liya
-    shortProductName:    Liya
-    version:             v23
-    shortVersion:        v23
-    versionedName:       Liya v23
-    shortVersionedName:  Liya v23
-    bootloaderEntryName: Liya
-    productUrl:          https://liyalinux.gitlab.io/
-    supportUrl:          https://liya.freeflarum.com/
-    knownIssuesUrl:      https://gitlab.com/liya5/known-issues/
-    releaseNotesUrl:     https://gitlab.com/liya5/changelog/
-    donateUrl:           https://www.patreon.com/liyalinux
+    productName:         TltOs
+    shortProductName:    TltOs
+    version:             v.alpha
+    shortVersion:        v.alpha
+    versionedName:       TltOs valpha
+    shortVersionedName:  TltOs valpha
+    bootloaderEntryName: TltOs
+    productUrl:
+    supportUrl:
+    knownIssuesUrl:
+    releaseNotesUrl:
+    donateUrl:
 
 # These images are loaded from the branding module directory.
 #

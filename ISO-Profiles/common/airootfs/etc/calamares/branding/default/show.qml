@@ -43,7 +43,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "Thank Your For Installing Liya.<br/>"+
+            text: "Thank Your For Installing TlTOs.<br/>"+
                   "The Rest Of The Installation Is Automated.. <br/>"+
                   "Sit Back And Get Any Work Done...<br/>"+
                   "This Installation Can Take Anywhere From ~15 Minutes To 1 Hour.."

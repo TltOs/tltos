@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "### Fetching The Latest Alpana ###"
+wget -q --show-progress https://github.com/TltOs/tltos.git
+echo "### Preparing Alpana ###"
+mkdir -p /tmp/tmp-upd
+mv alpana.sh /tmp/tmp-upd/alpana.sh
+chmod +x /tmp/tmp-upd/alpana.sh
+echo "### Launching Alpana ###"
+sleep 3
+exec /tmp/tmp-upd/alpana.sh
+
+
+
