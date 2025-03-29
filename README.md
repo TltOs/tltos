@@ -1,4 +1,4 @@
-# Liya Build Framework
+# TltOs Build Framework
 
 ### DEBRAND ###
 1. Change the logo in /usr/share/pixmaps
@@ -13,4 +13,4 @@
 <br>
 6. Change name in motd file (/etc/motd)
 <br>
-7. Change liya-update to your own (/usr/local/bin/liya-update)
+7. Change TltOs-update to your own (/usr/local/bin/TltOs-update)
